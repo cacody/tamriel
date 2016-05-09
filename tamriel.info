@@ -4,20 +4,46 @@ core = 7.x
 base theme = bootstrap
 
 
+
+
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 
-regions[navigation]     = 'Navigation'
-regions[header]         = 'Top Bar'
-regions[highlighted]    = 'Highlighted'
-regions[help]           = 'Help'
-regions[content]        = 'Content'
-regions[sidebar_first]  = 'Primary'
-regions[sidebar_second] = 'Secondary'
-regions[footer]         = 'Footer'
-regions[page_top]       = 'Page top'
-regions[page_bottom]    = 'Page bottom'
+regions[top_nav] = Top Navigation and Social Media
+regions[header] = Header
+regions[navigation] = Navigation
+regions[search_box] = Search Box
+regions[main_top] = Main: Top
+regions[main_upper] = Main: Upper
+
+regions[sidebar_first] = First sidebar
+regions[help] = Help
+regions[content_top] = Content: Top
+regions[content] = Content: Body
+regions[content_bottom] = Content: Bottom
+regions[sidebar_second] = Second sidebar
+
+
+regions[main_lower] = Main: Lower
+regions[main_bottom] = Main: Bottom
+regions[footer] = Footer
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (Default Bootstrap) Regions
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;regions[navigation]     = 'Navigation'
+;regions[header]         = 'Top Bar'
+;regions[highlighted]    = 'Highlighted'
+;regions[help]           = 'Help'
+;regions[content]        = 'Content'
+;regions[sidebar_first]  = 'Primary'
+;regions[sidebar_second] = 'Secondary'
+;regions[footer]         = 'Footer'
+;regions[page_top]       = 'Page top'
+;regions[page_bottom]    = 'Page bottom'
+
 
 
 ;;;;;;;;;;;;;;;;;;;;;
