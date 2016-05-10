@@ -27,23 +27,6 @@ regions[main_lower] = Main: Lower
 regions[main_bottom] = Main: Bottom
 regions[footer] = Footer
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; (Default Bootstrap) Regions
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;regions[navigation]     = 'Navigation'
-;regions[header]         = 'Top Bar'
-;regions[highlighted]    = 'Highlighted'
-;regions[help]           = 'Help'
-;regions[content]        = 'Content'
-;regions[sidebar_first]  = 'Primary'
-;regions[sidebar_second] = 'Secondary'
-;regions[footer]         = 'Footer'
-;regions[page_top]       = 'Page top'
-;regions[page_bottom]    = 'Page bottom'
-
-
-
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
