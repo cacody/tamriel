@@ -75,25 +75,35 @@
 ?>
 
 
-<header id="header" role="banner">header</header>
+<header id="header" class="bg-image" role="banner" style="background:#587abc;">
 
-<section id="main-top" role="complementary">main-top</section>
+	<?php if (!empty($page['top_nav'])): ?>
+		<div id="top-navigation" style="background:rgba(0,0,0,.5);">
+			<div class="container">
+			<div class="row">
+				<?php print render($page['top_nav']); ?>
+			</div>
+			</div>
+		</div>
+	<?php endif; ?>
 
-<section id="main-upper" role="complementary">main-upper</section>
+</header>
+
+<div id="main-top" role="complementary">main-top</div>
+
+<div id="main-upper" role="complementary">main-upper</div>
 
 <main id="main-content" role="main">main-content</main>
 
-<section id="main-lower" role="complementary">main-lower</section>
+<div id="main-lower" role="complementary">main-lower</div>
 
-<section id="main-bottom" role="complementary">main-bottom</section>
+<div id="main-bottom" role="complementary">main-bottom</div>
 
 <footer id="footer" role="contentinfo">footer</footer>
 
 <hr>// top nav
 
-<?php if (!empty($page['top_nav'])): ?>
-	<?php print render($page['top_nav']); ?>
-<?php endif; ?>
+
 
 <hr>
 
