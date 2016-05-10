@@ -10,21 +10,25 @@ base theme = bootstrap
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 
+;; HEADER REGIONS
 regions[top_nav] = Top Navigation and Social Media
 regions[header] = Header
 regions[navigation] = Navigation
 regions[search_box] = Search Box
 regions[main_top] = Main: Top
+
+;; SUB-HEADER SECTION
 regions[main_upper] = Main: Upper
 
+;; CONTENT AREA REGIONS
 regions[sidebar_first] = First sidebar
 regions[help] = Help
-regions[content_top] = Content: Top
+regions[content_upper] = Content: Upper
 regions[content] = Content: Body
-regions[content_bottom] = Content: Bottom
+regions[content_lower] = Content: Lower
 regions[sidebar_second] = Second sidebar
 
-
+;; SUB-CONTENT SECTIONS and FOOTER
 regions[main_lower] = Main: Lower
 regions[main_bottom] = Main: Bottom
 regions[footer] = Footer

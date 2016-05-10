@@ -63,9 +63,9 @@
  * $page['main_upper']: Items just before main content regions.
  * $page['first_sidebar']: Primarily area menus.
  * $page['help']: Reserved for system alerts.
- * $page['content_top']: Lead items rel to current node. Videos, lead img, etc.
+ * $page['content_upper']: Lead items rel to current node. Videos, lead img, etc.
  * $page['content']: Primary content of the node. 
- * $page['content_bottom']: Follow-up items for current node. Attached files, etc.
+ * $page['content_lower']: Follow-up items for current node. Attached files, etc.
  * $page['second_sidebar']: Another option for menus and support content.
  * $page['main_lower']: Poss for infographics but available for anything.
  * $page['main_bottom']: Poss for events and news but available for any items.
@@ -102,31 +102,32 @@
 	<?php endif; ?>
 	
 	<?php if (): ?>
-		<div id="optional-region-1" role="complementary">
+		<div id="main-top" role="complementary">
 		
 		</div>
 	<?php endif; ?>
 	
 	<?php if (): ?>
-		<div id="optional-region-2" role="complementary">
+		<div id="main-upper" role="complementary">
 		
 		</div>
 	<?php endif; ?>
 	
 	<?php if (): ?>
 		<main id="content-section">
+			
 		
 		</main>
 	<?php endif; ?>
 	
 	<?php if (): ?>
-		<div id="optional-region-3" role="complementary">
+		<div id="main-lower" role="complementary">
 		
 		</div>
 	<?php endif; ?>
 	
 	<?php if (): ?>
-		<div id="optional-region-4" role="complementary">
+		<div id="main-bottom" role="complementary">
 		
 		</div>
 	<?php endif; ?>
