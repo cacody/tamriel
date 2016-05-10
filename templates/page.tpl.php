@@ -124,10 +124,25 @@
 			</div>
 		</div><!-- /#logo-name-navsearch -->
 	<?php endif; ?>
+	
+	<?php if (!empty($page['integrated_header'])): ?>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+				<?php print render($page['integrated_header']); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php endif; ?>
 
 </header>
 
-<div id="main-top" role="complementary">main-top</div>
+<div id="main-top" role="complementary">
+
+
+</div>
 
 <div id="main-upper" role="complementary">main-upper</div>
 
@@ -140,16 +155,7 @@
 <footer id="footer" role="contentinfo">footer</footer>
 
 
-<hr>
-<hr>
-<hr>
-
-
-<hr>// integrated header
-<?php if (!empty($page['integrated_header'])): ?>
-	<?php print render($page['integrated_header']); ?>
-<?php endif; ?>
-<hr>
+<h1 style="background:black;color:white;">MAGINOT</h1>
 
 
 <hr>// main top
