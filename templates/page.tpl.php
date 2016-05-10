@@ -78,8 +78,7 @@
 <hr>// top nav
 
 <?php if (!empty($page['top_nav'])): ?>
-    <?php echo "region works, sort of."; ?>
-	<?php //print render($page['top_nav']); ?>
+	<?php print render($page['top_nav']); ?>
 <?php endif; ?>
 
 <hr>
