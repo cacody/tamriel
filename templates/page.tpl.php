@@ -78,7 +78,7 @@
 <header id="header" class="bg-image" role="banner" style="background:red;">
 
 	<?php if (!empty($page['top_nav'])): ?>
-		<div id="top-navigation" style="background:rgba(0,0,0,.5);">
+		<div id="top-navigation" style="background:#587abc;">
 			<div class="container">
 			<div class="row">
 			    <div class="col-md-12">
