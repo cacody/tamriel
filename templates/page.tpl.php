@@ -123,7 +123,7 @@
 <?php endif; ?>
 <hr>
 
-<hr>// sidebar first
+<hr>// first sidebar
 <?php if (!empty($page['sidebar_first'])): ?>
 	<?php print render($page['sidebar_first']); ?>
 <?php endif; ?>
@@ -151,6 +151,12 @@
 <hr>// content lower
 <?php if (!empty($page['content_lower'])): ?>
 	<?php print render($page['content_lower']); ?>
+<?php endif; ?>
+<hr>
+
+<hr>// first sidebar
+<?php if (!empty($page['sidebar_second'])): ?>
+	<?php print render($page['sidebar_second']); ?>
 <?php endif; ?>
 <hr>
 
