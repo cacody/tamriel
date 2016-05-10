@@ -160,6 +160,31 @@
 <?php endif; ?>
 <hr>
 
+<hr>// main lower
+<?php if (!empty($page['main_lower'])): ?>
+	<?php print render($page['main_lower']); ?>
+<?php endif; ?>
+<hr>
+
+<hr>// main bottom
+<?php if (!empty($page['main_bottom'])): ?>
+	<?php print render($page['main_bottom']); ?>
+<?php endif; ?>
+<hr>
+
+<hr>// footer
+<?php if (!empty($page['footer'])): ?>
+	<?php print render($page['footer']); ?>
+<?php endif; ?>
+<hr>
+
+<hr>// navigation
+<?php if (!empty($page['navigation'])): ?>
+	<?php print render($page['navigation']); ?>
+<?php endif; ?>
+<hr>
+
+<h1>DIVIDER</h2>
 
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="<?php print $container_class; ?>">
