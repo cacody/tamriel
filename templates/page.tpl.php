@@ -75,6 +75,20 @@
 ?>
 
 
+<header id="header" role="banner">header</header>
+
+<section id="main-top" role="complementary">main-top</section>
+
+<section id="main-upper" role="complementary">main-upper</section>
+
+<main id="main-content" role="main">main-content</main>
+
+<section id="main-lower" role="complementary">main-lower</section>
+
+<section id="main-bottom" role="complementary">main-bottom</section>
+
+<footer id="footer" role="contentinfo">footer</footer>
+
 <hr>// top nav
 
 <?php if (!empty($page['top_nav'])): ?>
