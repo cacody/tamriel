@@ -88,10 +88,42 @@
 				</div>
 			</div>
 			</div>
-		</div>
+		</div><!-- /#top-navigation -->
 	<?php endif; ?>
 	
 	
+	<?php if ($logo || $site_name || !empty($page['search_box']): ?>
+		<div id="logo-name-navsearch" class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<?php if ($logo): ?>
+						<div class="col-xs-3 col-sm-3 col-md-2">
+						<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+    	      			<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+    	    			</a>
+						</div>
+    					<?php endif; ?>
+                    	
+						<?php if (!empty($page['search_box'])): ?>
+						<div class="col-md-3 col-md-push-6">
+						<?php print render($page['search_box']); ?>
+						</div>
+						<?php endif; ?>
+                    	
+		            	
+						<?php if (!empty($site_name)): ?>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-md-pull-3">
+						<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+						<?php print $site_name; ?>
+						</a>
+						</div>
+						<?php endif; ?>
+					</div>
+				</div>
+			</div>
+		</div><!-- /#logo-name-navsearch -->
+	<?php endif; ?>
 
 </header>
 
@@ -107,30 +139,9 @@
 
 <footer id="footer" role="contentinfo">footer</footer>
 
-<hr>// top nav
-
-
 
 <hr>
-
-<hr>// logo
-	 <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
-      <?php endif; ?>
 <hr>
-
-<hr>// site name
-<?php if (!empty($site_name)): ?>
-    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
-  <?php endif; ?>
-<hr>
-
-<hr>// search box
-<?php if (!empty($page['search_box'])): ?>
-	<?php print render($page['search_box']); ?>
-<?php endif; ?>
 <hr>
 
 
