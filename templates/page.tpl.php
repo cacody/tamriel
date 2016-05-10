@@ -76,7 +76,9 @@
 <style>
 
 #header {
-	background: url('/sites/default/files/dental_patient_rights1-1.jpg') no-repeat;
+	background-image: url('/sites/default/files/dental_patient_rights1-1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 </style>
