@@ -92,7 +92,7 @@
 	<?php endif; ?>
 	
 	
-	<?php if ($logo || $site_name || !empty($page['search_box']): ?>
+	<?php if ($logo || $site_name || !empty($page['search_box'])): ?>
 		<div id="logo-name-navsearch" class="container">
 			<div class="row">
 				<div class="col-md-12">
