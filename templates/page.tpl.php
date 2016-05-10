@@ -136,12 +136,23 @@
 <?php endif; ?>
 <hr>
 
-
-<hr>// content
-<?php print render($page['content']); ?>
+<hr>// content upper
+<?php if (!empty($page['content_upper'])): ?>
+	<?php print render($page['content_upper']); ?>
+<?php endif; ?>
 <hr>
 
+<hr>// content
+<?php if (!empty($page['content'])): ?>
+    <?php print render($page['content']); ?>
+<?php endif; ?>
+<hr>
 
+<hr>// content lower
+<?php if (!empty($page['content_lower'])): ?>
+	<?php print render($page['content_lower']); ?>
+<?php endif; ?>
+<hr>
 
 
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
