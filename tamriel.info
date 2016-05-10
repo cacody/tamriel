@@ -11,21 +11,22 @@ base theme = bootstrap
 ;;;;;;;;;;;;;;;;;;;;;
 
 
-regions[top_nav] = Top Navigation and Social Media
-regions[header] = Header
-regions[navigation] = Navigation
-regions[search_box] = Search Box
-regions[main_top] = Main: Top
-regions[main_upper] = Main: Upper
-regions[sidebar_first] = First sidebar
-regions[help] = Help
-regions[content_upper] = Content: Upper
-regions[content] = Content: Body
-regions[content_lower] = Content: Lower
-regions[sidebar_second] = Second sidebar
-regions[main_lower] = Main: Lower
-regions[main_bottom] = Main: Bottom
-regions[footer] = Footer
+regions[top_nav] = 'Top Navigation and Social Media'
+regions[header] = 'Header'
+regions[navigation] = 'Navigation'
+regions[search_box] = 'Search Box'
+regions[integrated_header] = 'Integrated Header'
+regions[main_top] = 'Main: Top'
+regions[main_upper] = 'Main: Upper'
+regions[sidebar_first] = 'First sidebar'
+regions[help] = 'Help'
+regions[content_upper] = 'Content: Upper'
+regions[content] = 'Content: Body'
+regions[content_lower] = 'Content: Lower'
+regions[sidebar_second] = 'Second sidebar'
+regions[main_lower] = 'Main: Lower'
+regions[main_bottom] = 'Main: Bottom'
+regions[footer] = 'Footer'
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
