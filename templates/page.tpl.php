@@ -73,9 +73,15 @@
  * @ingroup templates
  */
 ?>
+<style>
 
+#header {
+	background: url('/sites/default/files/dental_patient_rights1-1.jpg') no-repeat;
+}
 
-<header id="header" class="bg-image" role="banner" style="background:red;">
+</style>
+
+<header id="header" class="bg-image" role="banner">
 
 	<?php if (!empty($page['top_nav'])): ?>
 		<div id="top-navigation" style="background:#587abc;">
