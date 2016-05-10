@@ -73,6 +73,9 @@
  * @ingroup templates
  */
 ?>
+
+
+<hr>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
