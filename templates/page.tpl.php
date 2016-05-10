@@ -98,13 +98,17 @@
 <hr>
 
 <hr>// search box
-
 <?php if (!empty($page['search_box'])): ?>
 	<?php print render($page['search_box']); ?>
 <?php endif; ?>
-
 <hr>
 
+
+<hr>// integrated header
+<?php if (!empty($page['integrated_header'])): ?>
+	<?php print render($page['integrated_header']); ?>
+<?php endif; ?>
+<hr>
 
 <hr>// content
 <?php print render($page['content']); ?>

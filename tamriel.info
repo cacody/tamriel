@@ -10,7 +10,6 @@ base theme = bootstrap
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 
-
 regions[top_nav] = 'Top Navigation and Social Media'
 regions[header] = 'Header'
 regions[navigation] = 'Navigation'
