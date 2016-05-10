@@ -75,7 +75,15 @@
 ?>
 
 
+<hr>// top nav
+
+<?php if !empty($page['top_nav']); ?>
+	<?php print render($page['top_nav']); ?>
+<?php endif; ?>
+
 <hr>
+
+<hr>// logo
 	 <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -83,16 +91,17 @@
       <?php endif; ?>
 <hr>
 
-<hr>
+<hr>// site name
 <?php if (!empty($site_name)): ?>
     <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
   <?php endif; ?>
 <hr>
 
-
-<hr>
+<hr>// content
 <?php print render($page['content']); ?>
 <hr>
+
+
 
 
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
