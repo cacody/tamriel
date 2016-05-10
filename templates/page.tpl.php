@@ -81,11 +81,17 @@
 		<div id="top-navigation" style="background:rgba(0,0,0,.5);">
 			<div class="container">
 			<div class="row">
+			    <div class="col-md-12">
+				<div class="row">
 				<?php print render($page['top_nav']); ?>
+				</div>
+				</div>
 			</div>
 			</div>
 		</div>
 	<?php endif; ?>
+	
+	
 
 </header>
 
