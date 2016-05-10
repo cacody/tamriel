@@ -76,9 +76,10 @@
 <style>
 
 #header {
-	background-image: url('/sites/default/files/dental_patient_rights1-1.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+	/* background-image: url('/sites/default/files/dental_patient_rights1-1.jpg'); */
+	/* background-repeat: no-repeat; */
+	/* background-size: cover; */
+	background: #00274c;
 }
 
 #top-navigation {
@@ -198,8 +199,53 @@
 <?php endif; ?>
 
 
-
-<main id="main-content" role="main">main-content</main>
+<?php if (!empty($page['content'])): ?>
+<main id="main-content" role="main">
+	<div class="container">
+		<div class="row">
+    	<?php if (!empty($page['sidebar_first'])): ?>
+    	  <aside class="col-sm-3" role="complementary">
+    	    <?php print render($page['sidebar_first']); ?>
+    	  </aside>  <!-- /#sidebar-first -->
+    	<?php endif; ?>
+    	
+    	<section<?php print $content_column_class; ?>>
+    	  <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+    	  <a id="main-content"></a>
+    	  <?php print render($title_prefix); ?>
+    	  <?php if (!empty($title)): ?>
+    	    <h1 class="page-header"><?php print $title; ?></h1>
+    	  <?php endif; ?>
+    	  <?php print render($title_suffix); ?>
+    	  <?php print $messages; ?>
+    	  <?php if (!empty($tabs)): ?>
+    	    <?php print render($tabs); ?>
+    	  <?php endif; ?>
+    	  <?php if (!empty($page['help'])): ?>
+    	    <?php print render($page['help']); ?>
+    	  <?php endif; ?>
+    	  <?php if (!empty($action_links)): ?>
+    	    <ul class="action-links"><?php print render($action_links); ?></ul>
+    	  <?php endif; ?>
+		
+		  <?php if (!empty($page['content_upper'])): ?>
+			<?php print render($page['content_upper']); ?>
+		  <?php endif; ?>
+    	  <?php print render($page['content']); ?>
+    	 <?php if (!empty($page['content_lower'])): ?>
+			<?php print render($page['content_lower']); ?>
+		<?php endif; ?>
+    	</section>
+    	
+    	<?php if (!empty($page['sidebar_second'])): ?>
+    	  <aside class="col-sm-3" role="complementary">
+    	    <?php print render($page['sidebar_second']); ?>
+    	  </aside>  <!-- /#sidebar-second -->
+    	<?php endif; ?>
+		</div>
+  </div>
+</main><!-- /#main-content -->
+<?php endif; ?>
 
 <div id="main-lower" role="complementary">main-lower</div>
 
@@ -211,52 +257,10 @@
 <h1 style="background:black;color:white;">MAGINOT</h1>
 
 
-<hr>// main top
-
-<hr>
-
-<hr>// main upper
-<?php if (!empty($page['main_upper'])): ?>
-	<?php print render($page['main_upper']); ?>
-<?php endif; ?>
-<hr>
-
-<hr>// first sidebar
-<?php if (!empty($page['sidebar_first'])): ?>
-	<?php print render($page['sidebar_first']); ?>
-<?php endif; ?>
-<hr>
 
 
-<hr>// help
-<?php if (!empty($page['help'])): ?>
-	<?php print render($page['help']); ?>
-<?php endif; ?>
-<hr>
 
-<hr>// content upper
-<?php if (!empty($page['content_upper'])): ?>
-	<?php print render($page['content_upper']); ?>
-<?php endif; ?>
-<hr>
 
-<hr>// content
-<?php if (!empty($page['content'])): ?>
-    <?php print render($page['content']); ?>
-<?php endif; ?>
-<hr>
-
-<hr>// content lower
-<?php if (!empty($page['content_lower'])): ?>
-	<?php print render($page['content_lower']); ?>
-<?php endif; ?>
-<hr>
-
-<hr>// first sidebar
-<?php if (!empty($page['sidebar_second'])): ?>
-	<?php print render($page['sidebar_second']); ?>
-<?php endif; ?>
-<hr>
 
 <hr>// main lower
 <?php if (!empty($page['main_lower'])): ?>
