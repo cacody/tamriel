@@ -97,10 +97,13 @@
 	background:rgba(33,122,200,.5);
 }
 
+#main-upper {
+	background:rgba(80,80,220,.5);
+}
+
 </style>
 
 <header id="header" class="bg-image" role="banner">
-
 	<?php if (!empty($page['top_nav'])): ?>
 		<div id="top-navigation">
 		    <div class="container">
@@ -114,7 +117,6 @@
 			</div>
 		</div><!-- /#top-navigation -->
 	<?php endif; ?>
-	
 	
 	<?php if ($logo || $site_name || !empty($page['search_box'])): ?>
 		<div id="logo-name-navsearch">
@@ -165,7 +167,6 @@
 			</div>
 		</div><!-- /#integrated_header-->
 	<?php endif; ?>
-
 </header>
 
 <?php if (!empty($page['main_top'])): ?>
@@ -182,9 +183,21 @@
 	</div><!-- /#main-top -->
 <?php endif; ?>
 
+<?php if (!empty($page['main_upper'])): ?>
+	<div id="main-upper" role="complementary">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<?php print render($page['main_upper']); ?>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div><!-- /#main-upper -->
+<?php endif; ?>
 
 
-<div id="main-upper" role="complementary">main-upper</div>
 
 <main id="main-content" role="main">main-content</main>
 
