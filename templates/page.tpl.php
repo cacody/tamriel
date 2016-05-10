@@ -247,46 +247,58 @@
 </main><!-- /#main-content -->
 <?php endif; ?>
 
-<div id="main-lower" role="complementary">main-lower</div>
 
-<div id="main-bottom" role="complementary">main-bottom</div>
+<?php if (!empty($page['main_lower'])): ?>
+	<div id="main-lower" role="complementary">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<?php print render($page['main_lower']); ?>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div><!-- /#main-lower -->
+<?php endif; ?>
 
-<footer id="footer" role="contentinfo">footer</footer>
+<?php if (!empty($page['main_bottom'])): ?>
+	<div id="main-bottom" role="complementary">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<?php print render($page['main_bottom']); ?>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div><!-- /#main-bottom -->
+<?php endif; ?>
 
+<?php if (!empty($page['main_bottom'])): ?>
+	<footer id="footer" role="contentinfo">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<?php print render($page['footer']); ?>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div><!-- /#footer -->
+<?php endif; ?>
+
+<?php if (!empty($page['navigation'])): ?>
+<nav id="menu" role="navigation">
+<?php print render($page['navigation']); ?>
+</nav>
+<?php endif; ?>
 
 <h1 style="background:black;color:white;">MAGINOT</h1>
 
 
-
-
-
-
-
-<hr>// main lower
-<?php if (!empty($page['main_lower'])): ?>
-	<?php print render($page['main_lower']); ?>
-<?php endif; ?>
-<hr>
-
-<hr>// main bottom
-<?php if (!empty($page['main_bottom'])): ?>
-	<?php print render($page['main_bottom']); ?>
-<?php endif; ?>
-<hr>
-
-<hr>// footer
-<?php if (!empty($page['footer'])): ?>
-	<?php print render($page['footer']); ?>
-<?php endif; ?>
-<hr>
-
-<hr>// navigation
-<?php if (!empty($page['navigation'])): ?>
-	<?php print render($page['navigation']); ?>
-<?php endif; ?>
-<hr>
-
-<h1>DIVIDER</h2>
 
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="<?php print $container_class; ?>">
