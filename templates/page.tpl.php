@@ -75,7 +75,7 @@
 ?>
 
 
-<header id="header" class="bg-image" role="banner" style="background:#587abc;">
+<header id="header" class="bg-image" role="banner" style="background:red;">
 
 	<?php if (!empty($page['top_nav'])): ?>
 		<div id="top-navigation" style="background:rgba(0,0,0,.5);">
