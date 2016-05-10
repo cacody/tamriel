@@ -86,15 +86,13 @@
 <header id="header" class="bg-image" role="banner">
 
 	<?php if (!empty($page['top_nav'])): ?>
-		<div id="top-navigation" style="background:rgba(0,0,0,.5);">
-			<div class="container">
+		<div id="top-navigation" class="container" style="background:rgba(0,0,0,.5);">
 			<div class="row">
-			    <div class="col-md-12">
-				<div class="row">
-				<?php print render($page['top_nav']); ?>
+				<div class="col-md-12">
+					<div class="row">
+						<?php print render($page['top_nav']); ?>
+					</div>
 				</div>
-				</div>
-			</div>
 			</div>
 		</div><!-- /#top-navigation -->
 	<?php endif; ?>
@@ -122,8 +120,9 @@
 		            	
 						<?php if (!empty($site_name)): ?>
 						<div class="col-xs-12 col-sm-12 col-md-6 col-md-pull-3">
-						<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-						<?php print $site_name; ?>
+						<a href="<?php print $front_page; ?>" 
+						title="<?php print t('Home'); ?>">
+							<?php print $site_name; ?>
 						</a>
 						</div>
 						<?php endif; ?>
@@ -134,23 +133,26 @@
 	<?php endif; ?>
 	
 	<?php if (!empty($page['integrated_header'])): ?>
-		<div class="container">
+		<div id="integrated-header" class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="row">
-				<?php print render($page['integrated_header']); ?>
+						<?php print render($page['integrated_header']); ?>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div><!-- /#integrated_header-->
 	<?php endif; ?>
 
 </header>
 
-<div id="main-top" role="complementary">
+<?php if (!empty($page['main_top'])): ?>
+	<div id="main-top" role="complementary">
+	<?php print render($page['main_top']); ?>
+	</div><!-- /#main-top -->
+<?php endif; ?>
 
 
-</div>
 
 <div id="main-upper" role="complementary">main-upper</div>
 
@@ -167,9 +169,7 @@
 
 
 <hr>// main top
-<?php if (!empty($page['main_top'])): ?>
-	<?php print render($page['main_top']); ?>
-<?php endif; ?>
+
 <hr>
 
 <hr>// main upper
