@@ -97,6 +97,15 @@
   <?php endif; ?>
 <hr>
 
+<hr>// search box
+
+<?php if (!empty($page['search_box'])): ?>
+	<?php print render($page['search_box']); ?>
+<?php endif; ?>
+
+<hr>
+
+
 <hr>// content
 <?php print render($page['content']); ?>
 <hr>
