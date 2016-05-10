@@ -86,13 +86,15 @@
 <header id="header" class="bg-image" role="banner">
 
 	<?php if (!empty($page['top_nav'])): ?>
-		<div id="top-navigation" class="container" style="background:rgba(0,0,0,.5);">
+		<div id="top-navigation" style="background:rgba(0,0,0,.5);">
+		    <div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="row">
 						<?php print render($page['top_nav']); ?>
 					</div>
 				</div>
+			</div>
 			</div>
 		</div><!-- /#top-navigation -->
 	<?php endif; ?>
@@ -147,8 +149,14 @@
 </header>
 
 <?php if (!empty($page['main_top'])): ?>
-	<div id="main-top" role="complementary">
-	<?php print render($page['main_top']); ?>
+	<div id="main-top" class="container" role="complementary">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<?php print render($page['main_top']); ?>
+				</div>
+			</div>
+		</div>
 	</div><!-- /#main-top -->
 <?php endif; ?>
 
