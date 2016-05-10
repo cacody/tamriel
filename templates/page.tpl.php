@@ -110,6 +110,20 @@
 <?php endif; ?>
 <hr>
 
+
+<hr>// main top
+<?php if (!empty($page['main_top'])): ?>
+	<?php print render($page['main_top']); ?>
+<?php endif; ?>
+<hr>
+
+<hr>// main upper
+<?php if (!empty($page['main_upper'])): ?>
+	<?php print render($page['main_upper']); ?>
+<?php endif; ?>
+<hr>
+
+
 <hr>// content
 <?php print render($page['content']); ?>
 <hr>
