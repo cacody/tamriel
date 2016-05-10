@@ -81,12 +81,28 @@
 	background-size: cover;
 }
 
+#top-navigation {
+	background:rgba(0,0,0,.5);
+}
+
+#logo-name-navsearch {
+	background:rgba(200,200,200,.5);
+}
+
+#integrated-header {
+	background:rgba(0,27,139,.5);
+}
+
+#main-top {
+	background:rgba(33,122,200,.5);
+}
+
 </style>
 
 <header id="header" class="bg-image" role="banner">
 
 	<?php if (!empty($page['top_nav'])): ?>
-		<div id="top-navigation" style="background:rgba(0,0,0,.5);">
+		<div id="top-navigation">
 		    <div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -101,7 +117,8 @@
 	
 	
 	<?php if ($logo || $site_name || !empty($page['search_box'])): ?>
-		<div id="logo-name-navsearch" class="container">
+		<div id="logo-name-navsearch">
+			<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="row">
@@ -131,11 +148,13 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</div><!-- /#logo-name-navsearch -->
 	<?php endif; ?>
 	
 	<?php if (!empty($page['integrated_header'])): ?>
-		<div id="integrated-header" class="container">
+		<div id="integrated-header"> 
+			<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="row">
@@ -143,19 +162,22 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</div><!-- /#integrated_header-->
 	<?php endif; ?>
 
 </header>
 
 <?php if (!empty($page['main_top'])): ?>
-	<div id="main-top" class="container" role="complementary">
+	<div id="main-top" role="complementary">
+		<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="row">
 					<?php print render($page['main_top']); ?>
 				</div>
 			</div>
+		</div>
 		</div>
 	</div><!-- /#main-top -->
 <?php endif; ?>
