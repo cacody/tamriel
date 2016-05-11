@@ -143,7 +143,7 @@
 						<?php if (!empty($site_name) || (!empty($page['header']))): ?>
 							
 							<?php if (!empty($site_name)): ?>	
-							<div class="col-xs-12 col-sm-12 col-md-6 col-md-pull-3">
+							<div class="col-xs-12 col-sm-12 col-md-6 col-md-pull-3<?php if (!empty($page['header'])) {echo "hidden";} ?>">
 							<a href="<?php print $front_page; ?>" 
 							title="<?php print t('Home'); ?>">
 								<?php print $site_name; ?>
