@@ -141,6 +141,7 @@
                     	
 		            	
 						<?php if (!empty($site_name) || (!empty($page['header']))): ?>
+							
 							<?php if (!empty($site_name)); ?>	
 							<div class="col-xs-12 col-sm-12 col-md-6 col-md-pull-3">
 							<a href="<?php print $front_page; ?>" 
@@ -149,11 +150,14 @@
 							</a>
 							</div>
 							<?php endif; ?>
-							<?php if (!empty($page['header'])); ?>
+							
+						
+							<?php //if (!empty($page['header'])); ?>
 							<div class="col-xs-12 col-sm-12 col-md-6 col-md-pull-3">
 								<?php print render($page['header']); ?>
 							</div>
-							<?php endif; ?>
+							<?php //endif; ?>
+							
 						<?php endif; ?>
 					</div>
 				</div>
