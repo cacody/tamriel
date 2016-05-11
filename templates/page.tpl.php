@@ -154,7 +154,7 @@
 						
 							<?php //if (!empty($page['header'])); ?>
 							<div class="col-xs-12 col-sm-12 col-md-6 col-md-pull-3">
-								<?php print render($page['header']); ?>
+								<?php //print render($page['header']); ?>
 							</div>
 							<?php //endif; ?>
 							
