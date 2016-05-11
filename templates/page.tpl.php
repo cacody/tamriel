@@ -90,7 +90,7 @@
 	background:rgba(200,200,200,.5);
 }
 
-#logo-name-navsearch .logo img {
+img.logo {
 	max-width: 100%;
 }
 
@@ -130,9 +130,9 @@
 				<div class="col-md-12">
 					<div class="row">
 						<?php if ($logo): ?>
-						<div class="logo col-xs-3 col-sm-3 col-md-2">
+						<div class="col-xs-3 col-sm-3 col-md-2">
 						<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-    	      			<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+    	      			<img class="logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
     	    			</a>
 						</div>
     					<?php endif; ?>
