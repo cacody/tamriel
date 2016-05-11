@@ -83,11 +83,11 @@
 }
 
 #top-navigation {
-	background:rgba(0,0,0,.5);
+	background:#eee;
 }
 
 #logo-name-navsearch {
-	background:rgba(200,200,200,.5);
+	background:#ddd;
 }
 
 img.logo {
@@ -95,15 +95,23 @@ img.logo {
 }
 
 #integrated-header {
-	background:rgba(0,27,139,.5);
+	background:#eee;
 }
 
 #main-top {
-	background:rgba(33,122,200,.5);
+	background:#ddd;
 }
 
 #main-upper {
-	background:rgba(80,80,220,.5);
+	background:#eee;
+}
+
+#main-lower {
+	background:#ddd;
+}
+
+#main-bottom {
+	background:#eee;
 }
 
 </style>
