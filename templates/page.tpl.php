@@ -141,7 +141,7 @@
                     	
 		            	
 						<?php if (!empty($site_name) || (!empty($page['header']))): ?>
-							<?php if ($site_name); ?>	
+							<?php if (!empty($site_name)); ?>	
 							<div class="col-xs-12 col-sm-12 col-md-6 col-md-pull-3">
 							<a href="<?php print $front_page; ?>" 
 							title="<?php print t('Home'); ?>">
